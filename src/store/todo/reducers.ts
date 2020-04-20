@@ -34,7 +34,7 @@ export function todoReducer ( state = initialState, action: TodoActionTypes ) {
     case ADD_LIST_TO_TODO:
       return {
         ...state,
-        // Add one new item onto the end of our array!
+       
         lists: [ ...state.lists, action.payload ]
       }
     default:

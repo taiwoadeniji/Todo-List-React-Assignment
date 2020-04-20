@@ -74,15 +74,18 @@ export class Todo extends React.Component<ITodoProps>
   }
 }
 
-// Retrieve "items" from our "global" redux state.
+
 const mapStateToProps = ( state: RootState ) => {
   return {
     lists: state.todo.lists
   }
 }
 
-// Connect Redux and React using our values and "view!"
+
 export default connect(
   mapStateToProps,
   { addListToTodo, removeListFromTodo }
 )( Todo );
+
+
+/* Please delete all the todo-List to see the Error Message */
